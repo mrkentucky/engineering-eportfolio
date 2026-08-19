@@ -1,36 +1,21 @@
-# Engineering ePortfolio
+# Maitele Makungo — Engineering ePortfolio
 
-This is a GitHub Pages-ready engineering ePortfolio.
+GitHub Pages-ready version with real project and experience photographs.
 
 ## Files
+- `index.html` — website
+- `style.css` — design
+- `script.js` — navigation and project modals
+- `assets/` — portfolio images
 
-- `index.html` — main website
-- `style.css` — visual design and responsive layout
-- `script.js` — mobile navigation and project pop-up windows
-- `assets/` — place project images here
-- `cv.pdf` — add your CV here
+## Upload
+Upload the contents of this folder to the root of the `engineering-eportfolio` GitHub repository.
+Do not upload the ZIP itself.
 
-## Before publishing
+GitHub Pages should remain:
+- Source: Deploy from a branch
+- Branch: `main`
+- Folder: `/ (root)`
 
-Replace:
-- `Your Name`
-- `YN` in the logo
-- email address
-- LinkedIn link
-- GitHub link
-- CV file
-- project placeholder content with your final evidence/images
-
-## GitHub Pages
-
-1. Create a new GitHub repository, e.g. `engineering-eportfolio`.
-2. Upload all files in this folder.
-3. Open the repository's **Settings → Pages**.
-4. Under **Build and deployment**, select **Deploy from a branch**.
-5. Select the `main` branch and `/ (root)`.
-6. Save.
-7. GitHub will provide the public website link.
-
-The final link should look similar to:
-
-`https://YOUR-USERNAME.github.io/engineering-eportfolio/`
+## Final cleanup
+Before submission, replace the placeholder contact links/email and add `cv.pdf` if desired.
