@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Engineering ePortfolio of a final-year Mechatronics Engineering student.">
+  <title>Your Name | Mechatronics Engineering Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#home">YN<span>.</span></a>
+      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">MECHATRONICS ENGINEERING · UCT</p>
+          <h1>Building intelligent systems at the intersection of <span>engineering and computation.</span></h1>
+          <p class="hero-text">
+            Final-year Mechatronics Engineering student interested in robotics, control,
+            machine learning, computer vision and data-driven problem solving.
+          </p>
+          <div class="hero-buttons">
+            <a class="button primary" href="#projects">Explore my work</a>
+            <a class="button secondary" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <div class="orbit"></div>
+          <div class="hero-card-content">
+            <span class="card-label">ENGINEERING IDENTITY</span>
+            <h2>Design.<br>Model.<br>Build.<br>Improve.</h2>
+            <p>From physical systems to intelligent algorithms.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">01 · ABOUT</p>
+          <h2>More than a collection of projects.</h2>
+        </div>
+        <div class="section-copy">
+          <p>
+            I am a final-year Mechatronics Engineering student at the University of Cape Town.
+            My degree has given me a broad engineering foundation across mechanical systems,
+            electronics, control, programming and system design.
+          </p>
+          <p>
+            What interests me most is the point where these disciplines meet: systems that can
+            sense their environment, make decisions and respond intelligently. My recent work
+            has therefore moved towards robotics, computer vision, machine learning and
+            quantitative analysis.
+          </p>
+          <p>
+            I enjoy taking an open-ended engineering problem, breaking it into smaller parts,
+            modelling possible solutions and then testing whether the solution actually works.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 · SELECTED WORK</p>
+            <h2>Projects that shaped how I engineer.</h2>
+          </div>
+          <p class="heading-note">Click a project to see the engineering process behind it.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-number">01</div>
+            <div class="project-visual micromouse">
+              <span>ROBOTICS / CONTROL</span>
+              <strong>MICROMOUSE</strong>
+            </div>
+            <div class="project-content">
+              <p class="tag">MATLAB · SIMULINK · PID · SENSORS</p>
+              <h3>MicroMouse Power & Control</h3>
+              <p>
+                Designed and modelled systems for a miniature autonomous robot, including
+                encoder and gyro feedback, PID control and junction-handling logic.
+              </p>
+              <ul>
+                <li>Motor encoder feedback</li>
+                <li>Gyroscope-based correction</li>
+                <li>PID control and state logic</li>
+                <li>Simulation and performance testing</li>
+              </ul>
+              <button class="text-button" onclick="openModal('micromouse-modal')">View project →</button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">02</div>
+            <div class="project-visual argo">
+              <span>SYSTEMS / DESIGN</span>
+              <strong>ARGO FLOAT</strong>
+            </div>
+            <div class="project-content">
+              <p class="tag">SYSTEM DESIGN · BUOYANCY · LCA</p>
+              <h3>Low-Cost Argo Float</h3>
+              <p>
+                Developed a cost-conscious autonomous float concept for environmental sensing,
+                combining housing, buoyancy control, sensing, power and communications.
+              </p>
+              <ul>
+                <li>Housing and material selection</li>
+                <li>Buoyancy calculations</li>
+                <li>Ballast system concept</li>
+                <li>Life-cycle considerations</li>
+              </ul>
+              <button class="text-button" onclick="openModal('argo-modal')">View project →</button>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-number">03</div>
+            <div class="project-visual slam">
+              <span>AI / COMPUTER VISION</span>
+              <strong>3DGS-SLAM</strong>
+            </div>
+            <div class="project-content">
+              <p class="tag">3D RECONSTRUCTION · SLAM · ML</p>
+              <h3>3D Gaussian Splatting & SLAM</h3>
+              <p>
+                Investigating how modern 3D Gaussian Splatting methods can be combined with
+                SLAM to create efficient representations of real-world environments.
+              </p>
+              <ul>
+                <li>SLAM literature review</li>
+                <li>3D Gaussian Splatting</li>
+                <li>Outdoor reconstruction</li>
+                <li>Computer vision pipeline design</li>
+              </ul>
+              <button class="text-button" onclick="openModal('slam-modal')">View project →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section dark-section">
+      <div class="container two-column">
+        <div>
+          <p class="eyebrow">03 · EXPERIENCE</p>
+          <h2>Engineering in the real world.</h2>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <p class="tag">VACATION WORK · AUTOMATION</p>
+            <h3>Industrial Engineering Experience</h3>
+            <p>
+              Gained practical exposure to an engineering workplace and automation environment,
+              working around machinery and observing how engineering decisions translate from
+              theory into real production environments.
+            </p>
+            <p class="reflection">
+              <strong>What I took from it:</strong> good engineering is not only about whether
+              a design works. Safety, communication, preparation and professional responsibility
+              matter just as much.
+            </p>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-dot"></span>
+            <p class="tag">LEADERSHIP · EDUCATION</p>
+            <h3>TeachOut</h3>
+            <p>
+              Volunteering as a tutor has strengthened my ability to communicate technical ideas,
+              adapt explanations to different learners and contribute to a team working towards
+              a shared goal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="eyebrow">04 · TOOLKIT</p>
+        <h2>What I bring to an engineering team.</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <p>Python · MATLAB · C/C++ · MQL5 · Git</p>
+          </div>
+          <div class="skill-group">
+            <h3>Engineering</h3>
+            <p>Control systems · Robotics · Electronics · CAD · System modelling</p>
+          </div>
+          <div class="skill-group">
+            <h3>AI & Data</h3>
+            <p>Machine learning · Computer vision · 3D reconstruction · Statistical analysis</p>
+          </div>
+          <div class="skill-group">
+            <h3>Professional</h3>
+            <p>Problem solving · Teamwork · Technical communication · Leadership · Research</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section statement-section">
+      <div class="container">
+        <p class="eyebrow">05 · DIRECTION</p>
+        <blockquote>
+          “I want to build systems that do more than operate — systems that can learn,
+          adapt and make better decisions.”
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">06 · CONTACT</p>
+          <h2>Let's connect.</h2>
+          <p>
+            Interested in engineering, robotics, intelligent systems or data-driven problem
+            solving? I'd be happy to connect.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:your.email@example.com">your.email@example.com</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn →</a>
+          <a href="#" target="_blank" rel="noopener">GitHub →</a>
+          <a href="cv.pdf" target="_blank">Download CV →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Your Name</span>
+      <span>Mechatronics Engineering Portfolio</span>
+    </div>
+  </footer>
+
+  <div id="micromouse-modal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('micromouse-modal')">×</button>
+      <p class="eyebrow">PROJECT 01</p>
+      <h2>MicroMouse Power & Control</h2>
+      <p>
+        A multidisciplinary robotics project involving sensing, motor control, power electronics
+        and autonomous navigation. My work included encoder feedback, gyro correction, PID
+        control and MATLAB/Simulink simulation.
+      </p>
+      <p><strong>Evidence to add:</strong> Simulink screenshots, controller block diagrams,
+        Stateflow logic, simulation results and photographs.</p>
+    </div>
+  </div>
+
+  <div id="argo-modal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('argo-modal')">×</button>
+      <p class="eyebrow">PROJECT 02</p>
+      <h2>Low-Cost Argo Float</h2>
+      <p>
+        A systems-engineering project focused on developing a cost-effective autonomous float
+        capable of environmental sensing. The design considered housing, buoyancy, ballast,
+        power, communication and environmental constraints.
+      </p>
+      <p><strong>Evidence to add:</strong> CAD drawings, system diagrams, buoyancy calculations,
+        material-selection tables and final presentation images.</p>
+    </div>
+  </div>
+
+  <div id="slam-modal" class="modal" aria-hidden="true">
+    <div class="modal-box">
+      <button class="modal-close" onclick="closeModal('slam-modal')">×</button>
+      <p class="eyebrow">PROJECT 03</p>
+      <h2>3D Gaussian Splatting & SLAM</h2>
+      <p>
+        A final-year research project investigating modern 3D scene representation and its
+        relationship with SLAM. The work brings together computer vision, geometry, machine
+        learning and robotics.
+      </p>
+      <p><strong>Evidence to add:</strong> literature-review diagrams, system architecture,
+        reconstructed scenes, experiment results and implementation screenshots.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
